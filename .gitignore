@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Downloaded voice model (large) and generated output
+models/vosk-model-*/
+*.stl
+*.csv
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# ML: collected data and trained artifacts (regenerable / large)
+ml/data/**/*.npy
+ml/artifacts/*.pt
+ml/artifacts/*.png

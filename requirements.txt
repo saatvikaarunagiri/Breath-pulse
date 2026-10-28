@@ -1,0 +1,9 @@
+# Core (required). Pinned mediapipe: newer builds sometimes drop the
+# classic "solutions" API this app uses.
+opencv-python>=4.8
+mediapipe==0.10.14
+numpy>=1.24,<2
+pillow>=10.0
+scipy>=1.10
+# NOTE: tkinter is NOT a pip package. macOS/Windows python.org installers
+# include it. On Linux: sudo apt install python3-tk  (or your distro's equivalent)
