@@ -1,7 +1,7 @@
-# Breath & Pulse Cam — User Guide & Manual
+# User Guide & Manual
 
-Step by step for **macOS, Windows, and Linux**. Not a medical device — a
-learning/demo project. Stuck? → **saatvika22@outlook.com**
+Step by step for **macOS, Windows, and Linux**. Not a medical device, a
+learning/demo project.
 
 ---
 
@@ -28,8 +28,8 @@ conda create -n breathpulse python=3.12 -y
 conda activate breathpulse
 
 cd "/path/to/breath-pulse-cam"
-pip install -r requirements.txt            # core app
-pip install -r ml/requirements-ml.txt      # ML (PyTorch etc.)
+pip install -r requirements.txt            
+pip install -r ml/requirements-ml.txt      
 ```
 
 Verify:
@@ -41,7 +41,7 @@ python -c "import cv2, mediapipe as mp; print('cv2 ok | solutions:', hasattr(mp,
 **Linux only:** `sudo apt install python3-tk` (Fedora: `python3-tkinter` · Arch: `tk`).
 **Voice (optional):** `pip install -r requirements-voice.txt` then `python download_model.py`.
 
-> ⚠️ **One environment, always.** `conda activate breathpulse` every time. Mixing a
+>  **One environment, always.** `conda activate breathpulse` every time. Mixing a
 > `venv` and conda causes most "ModuleNotFoundError" issues.
 
 ## 3. Run the app
@@ -88,7 +88,7 @@ then train/evaluate. Real data is needed for real use.)*
 Details: [ml/README.md](ml/README.md).
 
 ## 6. Privacy
-On-device only. **No video or audio is recorded or uploaded** — the pulse signal
+On device only. **No video or audio is recorded or uploaded** — the pulse signal
 is computed live and discarded; only the numbers you choose to save are written.
 At the end you pick what to keep (session / identity / both / delete everything).
 
@@ -104,4 +104,4 @@ At the end you pick what to keep (session / identity / both / delete everything)
 | HR reads "weak" / jumps around | More light, less motion, no flickering bulbs. Give it ~10 s to settle. |
 | `--ml` does nothing | Train the model first — see [section 5](#5-the-ml-model). |
 
-Still stuck, or found a bug? → **saatvika22@outlook.com**
+Still stuck, or found a bug? -> **saatvika22@outlook.com**
